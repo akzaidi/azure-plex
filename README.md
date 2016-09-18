@@ -1,5 +1,5 @@
 # azure-plex
-Run a media server using files stored in the cloud via Azure Blob Storage. Our docker container uses a mounted file system to interact with your Azure Blob Storage account then launches Plex Media Server at <a href="http://localhost:3000/web/index.html">http://localhost:3000/web/index.html</a>. Select add library and choose the mounted folder. 
+Run a media server using files stored in the cloud via Azure Blob Storage. Our docker container uses a mounted file system to interact with your Azure Blob Storage account then launches Plex Media Server at <a href="http://localhost:32400/web/index.html">http://localhost:3000/web/index.html</a>. Select add library and choose the mounted folder. 
 
 # Run the Docker server
 ```docker run --privileged -it -e NAME="[Azure storage account name]" -e KEY="[Azure access key]" -p 32400:32400 akzaidi/azure-plex ```
