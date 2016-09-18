@@ -22,7 +22,7 @@ WORKDIR /home/fuse-2.9.5
 RUN sh configure && make -j8 && make install
 
 WORKDIR /home
-RUN wget http://downloads.plexapp.com/plex-media-server/0.9.9.14.531-7eef8c6/plexmediaserver_0.9.9.14.531-7eef8c6_amd64.deb
+RUN wget https://downloads.plex.tv/plex-media-server/1.1.4.2757-24ffd60/plexmediaserver_1.1.4.2757-24ffd60_amd64.deb
 RUN dpkg -i plexmediaserver_0.9.9.14.531-7eef8c6_amd64.deb
 RUN apt-get install -f
 
